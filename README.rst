@@ -40,10 +40,10 @@ are set to ``False`` but you can change the behavior::
 Warning
 =======
 
-This proxy does not totally respect the RFC. For example chunked
-Transfer-Encoding are not supported. Also if you plan to upload some large
-file, the proxy is not able to stream the content. (Mostly because requests is
-not able to stream requests' body)
+This proxy does not totally respect the RFC. Chunked Transfer-Encoding in
+request headers are not supported. Also if you plan to upload some large file,
+the proxy is not able to stream the content. (Mostly because requests is not
+able to stream requests' body)
 
 If you need a more robust WSGI proxy, have a look at
 `restkit.contrib.wsgi_proxy
