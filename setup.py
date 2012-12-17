@@ -13,7 +13,7 @@ def read(name):
 setup(name='requests_proxy',
       version=version,
       description="A WSGI Proxy using requests",
-      long_description=read('README.rst') + read('CHANGES.rst'),
+      long_description=read('README.rst') + '\n' + read('CHANGES.rst'),
       classifiers=[
           'License :: OSI Approved :: Apache Software License',
           'Topic :: Internet :: WWW/HTTP :: WSGI :: Application',
